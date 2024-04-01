@@ -5,12 +5,14 @@ import (
 )
 
 func PhoneNumberChecker(number string, result *string) {
+
 	telkNum := []string{"0811", "0812", "0813", "0814", "0815", "62811", "62812", "62813", "62814", "62815"}
 	for _, num := range telkNum {
 		if len(num) <= len(number) && number[:len(num)] == num {
 			*result = "Telkomsel"
 			return
 		}
+
 	}
 
 	indosatNum := []string{"0816", "0817", "0818", "0819", "62816", "62817", "62817", "62818", "62819"}
@@ -59,7 +61,7 @@ func PhoneNumberChecker(number string, result *string) {
 
 func main() {
 	// bisa digunakan untuk pengujian test case
-	var number = "0815679302990"
+	var number = "62816111187790"
 	var result string
 
 	PhoneNumberChecker(number, &result)
