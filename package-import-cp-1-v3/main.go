@@ -1,7 +1,7 @@
 package main
 
 import (
-	//"a21hc3NpZ25tZW50/internal"
+	"a21hc3NpZ25tZW50/internal"
 	"fmt"
 	"strconv"
 	"strings"
